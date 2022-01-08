@@ -25,6 +25,7 @@ public abstract class Vehicle<T> {
             }
         } catch (IllegalStateException exception) {
             System.out.println("Cannot landing passenger to vehicle. The vehicle is full.");
+            throw exception;
         }
     }
 
@@ -37,6 +38,7 @@ public abstract class Vehicle<T> {
             }
         } catch (IllegalStateException exception) {
             System.out.println("Passenger is not in the vehicle");
+            throw exception;
         }
     }
 }
