@@ -1,4 +1,6 @@
 package classes.man;
 
-public abstract class Man {
+import java.io.Serializable;
+
+public abstract class Man implements Serializable {
 }

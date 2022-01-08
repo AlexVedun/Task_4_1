@@ -2,9 +2,10 @@ package classes.vehicle;
 
 import classes.man.Man;
 
+import java.io.Serializable;
 import java.util.List;
 
-public abstract class Vehicle<T> {
+public abstract class Vehicle<T> implements Serializable {
     protected Integer capacity;
     protected List<T> passengers;
 

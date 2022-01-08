@@ -1,9 +1,10 @@
 package classes.vehicle;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Road {
+public class Road implements Serializable {
     public List<Vehicle> carsInRoad = new ArrayList<>();
 
     public int getCountOfHumans() {
